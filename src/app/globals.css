@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --harvard-crimson: #A51C30;
+  --harvard-dark: #8B1728;
+}
+
+body {
+  background: white;
+  color: #2E2E2E;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--harvard-crimson);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--harvard-dark);
+}
+
+/* Typography */
+.stardos-light {
+  font-family: 'Stardos Stencil', serif;
+  font-weight: 400;
+}
+
+.text-sleek {
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.heading-sleek {
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-[#A51C30] text-white px-6 py-2 hover:bg-[#8B1728] transition-colors duration-200 text-sleek;
+}
+
+.btn-outline {
+  @apply border border-[#A51C30] text-[#A51C30] px-6 py-2 hover:bg-[#A51C30] hover:text-white transition-colors duration-200 text-sleek;
+}
