@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <footer className="bg-[#FFF9F0] border-t border-gray-100">
@@ -17,19 +19,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-[#647ACB] mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-600 hover:text-[#FF7F50] transition-colors duration-200">
+                <Link href="/" className="text-gray-600 hover:text-[#FF7F50] transition-colors duration-200">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/courses" className="text-gray-600 hover:text-[#FF7F50] transition-colors duration-200">
+                <Link href="/courses" className="text-gray-600 hover:text-[#FF7F50] transition-colors duration-200">
                   Courses
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-gray-600 hover:text-[#FF7F50] transition-colors duration-200">
+                <Link href="/contact" className="text-gray-600 hover:text-[#FF7F50] transition-colors duration-200">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -48,7 +50,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-100">
           <p className="text-center text-gray-500">
-            © {new Date().getFullYear()} Sunrise Public School. All rights reserved.
+            &copy; {new Date().getFullYear()} Sunrise Public School. All rights reserved.
           </p>
         </div>
       </div>

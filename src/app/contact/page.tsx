@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,7 +38,7 @@ export default function Contact() {
             Get in Touch
           </h1>
           <p className="text-sleek text-xl text-[#2E2E2E]/80 mb-12">
-            We're here to help and answer any questions you might have. 
+            We&apos;re here to help and answer any questions you might have. 
             We look forward to hearing from you.
           </p>
         </div>

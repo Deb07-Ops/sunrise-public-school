@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import {
   AcademicCapIcon,
@@ -24,7 +23,7 @@ export default function Home() {
             </h1>
             <p className="text-sleek text-xl text-[#2E2E2E]/80 mb-8 max-w-2xl">
               Nurturing minds, building character, and fostering excellence since 1995. 
-              Where every child's potential is discovered and nurtured.
+              Where every child&apos;s potential is discovered and nurtured.
             </p>
             <div className="flex gap-6">
               <Link 
